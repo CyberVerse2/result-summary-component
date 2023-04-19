@@ -9,13 +9,16 @@ html {
 }
 body {
   font-size: 1.6rem;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
   font-family: "Hanken Grotesk", sans-serif;
 }
 main {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   min-width: 64rem;
   display: flex;
   border-radius: 30px;
@@ -60,7 +63,11 @@ p span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
 }
 .score-circle h1 {
   font-size: 5.4rem;
@@ -91,7 +98,7 @@ p span {
   padding: 1.3rem;
   background-color: hsl(224, 30%, 27%);
 }
-.section-2 a:hover{
+.section-2 a:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 .score-container {
@@ -156,7 +163,7 @@ p span {
   .score-tab:not(:last-child) {
     margin-bottom: 1.7rem;
   }
-  .section-2 h2{
+  .section-2 h2 {
     margin-bottom: 3.5rem;
   }
 }
